@@ -5,7 +5,7 @@ Here is the list of all mods that currently have ready-to-use questlines in this
 | Mod Name | Chapter File | Game Version | Official CurseForge | Official GitHub |
 | :--- | :--- | :--- | :--- | :--- |
 | **Archers (RPG Series)** | `archers.snbt` | `1.20.1` | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/archers-rpg-series) | [GitHub](https://github.com/ZsoltMolnarrr/TargetDummy) *(RPG Series Repo)* |
-| **Bosses of Mass Destruction** | `bosses_of_mass_destruction.snbt` | `1.20.1` | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction) | [GitHub](https://github.com/LordDeatH98/Bosses-of-Mass-Destruction) |
+| **Bosses of Mass Destruction** | `bosses_of_mass_destruction.snbt` | `1.20.1` | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-alpha) | [GitHub](https://github.com/LordDeatH98/Bosses-of-Mass-Destruction) |
 
 ### 📌 How to Install:
 1. Download the `.snbt` file of the mod you want from the `chapters/` folder.
