@@ -1,17 +1,16 @@
-# Universal-Quests_FTB-Quests
-A curated collection of ready-to-use FTB Quests for multiple Minecraft mods. Just drag, drop, and play
+# 🏆 Universal Quests FTB Quests Pack
 
-# 🏆 Universal FTB Quests Pack
-
-Uma coleção centralizada de capítulos de missões (**FTB Quests**) prontos a usar para múltiplos mods de Minecraft. Basta arrastar, largar na pasta do teu modpack e jogar!
-
-## 🏹 Capítulos Prontos (`.snbt`):
-
-* **[RPG Series] Archers** ➡️ Ficheiro: `archers.snbt` (Missões focadas em progressão de arcos, grimórios, feitiços e armaduras com recompensas épicas e níveis de XP).
-
-## ⏳ Próximos Projetos (Em breve):
-* [ ] Bosses of Mass Destruction (BOMD)
-* [ ] Spell Engine / Wizards
+### 🛠️ Core Dependency
+This project relies entirely on the official **FTB Quests** mod. If you are a modpack creator, make sure you have it installed:
+* 🌐 **CurseForge:** [FTB Quests (Fabric/Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)
+* 🐙 **GitHub Oficial da Equipa:** [FTB Team / FTB Quests](https://github.com/FTBTeam/FTB-Quests)
 
 ---
-*Criado por EuSerSantos. Sente-se à vontade para usar no seu modpack ou contribuir com novos capítulos!*
+
+### 📂 Ready-to-Use Questlines
+You can find all the pre-made quest chapters inside the `chapters/` folder. 
+
+👉 **[CLICK HERE TO VIEW THE SUPPORTED MODS & LINKS (MODS.md)](./MODS.md)**
+
+---
+*Created by EuSerSantos. Feel free to use this in your modpack or contribute with new chapters!*
