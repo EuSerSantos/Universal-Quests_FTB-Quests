@@ -1,0 +1,1270 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bosses_of_mass_destruction"
+	group: "2BACEE37E5D53DF5"
+	icon: "bosses_of_mass_destruction:soul_star"
+	id: "7D0154ADE5A256C4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Quatro bosses lendarios estao escondidos pelo mundo: Night Lich, Void Blossom, Nether Gauntlet e Obsidilith."]
+			icon: "bosses_of_mass_destruction:soul_star"
+			id: "43B74611B1DEC71D"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "BOMD • FTB Quests - By Santos"
+			tasks: [{
+				id: "000C85D3E553074A"
+				title: "(BOMD) Bora Matar Bosses"
+				type: "checkmark"
+			}]
+			title: "&eBosses of Mass Destruction"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43B74611B1DEC71D"]
+			description: ["Antes de seguir qualquer estrela, prepara o minimo: escudo para sobreviver, arco para bosses voadores e comida suficiente para uma exploracao longa."]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0256CF06A2E5F444"
+			rewards: [
+				{
+					id: "02658ADB55F06623"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "030B75E3CEC44A8F"
+					item: {
+						Count: 1
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5C6995FC88E8DBBB"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "66F3215677764697"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+			subtitle: "O kit basico de sobrevivencia."
+			tasks: [
+				{
+					id: "6320A62F4D9D6ABD"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03A4CEE37377378D"
+					item: {
+						Count: 1
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Preparar a Cacada"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0256CF06A2E5F444"]
+			description: ["A Soul Star e o guia da primeira etapa. Derrota mortos-vivos em regioes frias ate obteres uma estrela capaz de apontar o caminho para a Lich Tower."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:soul_star"
+			id: "36E190DD28B21632"
+			rewards: [
+				{
+					count: 2
+					id: "647596502D82D66F"
+					item: "bosses_of_mass_destruction:soul_star"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "00747F8ED2850868"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7E2A208A7831F4BC"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "2A2042C8FBB1EDD2"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+			subtitle: "A estrela aponta para a torre."
+			tasks: [{
+				id: "2720D8B08E8E4D21"
+				item: "bosses_of_mass_destruction:soul_star"
+				type: "item"
+			}]
+			title: "Estrelas Guia"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36E190DD28B21632"]
+			description: ["Segue a Soul Star ate uma torre gelada e hostil. La dentro, sobe com cuidado, limpa spawners e encontra os altares que acordam o Night Lich."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:chiseled_stone_altar"
+			id: "32F4564C426F7DEB"
+			rewards: [
+				{
+					count: 24
+					id: "010BCE4F4D4BEE16"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75309B646BB321EA"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "671AFC8E6091520C"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0BC0013D8D03B245"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7FBB2EA552C152A1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Primeiro destino: a Lich Tower."
+			tasks: [{
+				id: "75D1BF3F532BA4CB"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bosses_of_mass_destruction:chiseled_stone_altar"
+				type: "observation"
+			}]
+			title: "A Torre Gelada"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32F4564C426F7DEB"]
+			description: ["O Night Lich usa Blue Fireballs e Comets para te expulsar da zona segura. Esta bolinha existe para te lembrar: luta com distancia, mobilidade e teto livre."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:ancient_anima"
+			id: "246F1AE26B023CE6"
+			rewards: [
+				{
+					count: 32
+					id: "175C002711B2613C"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "5A0CF894F3071C71"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "783DC9978EC3342A"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "0905A0341DEE0349"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "circle"
+			subtitle: "Comet e Blue Fireball sao mecanicas, nao bosses."
+			tasks: [{
+				count: 4L
+				id: "2A9C1CF10C3DB920"
+				item: { Count: 4, id: "bosses_of_mass_destruction:soul_star" }
+				type: "item"
+			}]
+			title: "Ceu em Chamas Azuis"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["246F1AE26B023CE6"]
+			description: ["Ativa os quatro altares com Soul Stars e derrota o Night Lich. Ele e o primeiro boss real do mod e a porta de entrada para os artefactos antigos."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:ancient_anima"
+			id: "3A8A4FD8B7414478"
+			rewards: [
+				{
+					count: 2
+					id: "168C8765BA0AB2CA"
+					item: "bosses_of_mass_destruction:ancient_anima"
+					type: "item"
+				}
+				{
+					id: "7BB0DBDAAE20E81A"
+					item: "bosses_of_mass_destruction:soul_star"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "115C41B4D9B0BE3E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "3959A6FED6E6E9B5"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:power"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "13DD377320A7CDD2"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7011E6AB710C811C"
+					type: "xp_levels"
+					xp_levels: 9
+				}
+			]
+			shape: "diamond"
+			subtitle: "Boss 1/4: Night Lich."
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
+				criterion: ""
+				id: "4D2E7710472CB355"
+				type: "advancement"
+			}]
+			title: "O Lich da Noite"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A8A4FD8B7414478"]
+			description: ["Apos o Lich, o caminho desce. Encontra uma Void Lily nas cavernas profundas: ela e o rastro natural que denuncia a arena da Void Blossom."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:void_lily"
+			id: "4704D36E4C0F762E"
+			rewards: [
+				{
+					count: 24
+					id: "57B9E6FEF0887954"
+					item: "minecraft:glow_berries"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6C1302CE385AEBB4"
+					item: "minecraft:moss_block"
+					type: "item"
+				}
+				{
+					id: "230A565C31FC89CA"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "099296AEE7D50B3E"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+			subtitle: "O polen guia para baixo."
+			tasks: [{
+				id: "48CE50E214C55EC5"
+				item: "bosses_of_mass_destruction:void_lily"
+				type: "item"
+			}]
+			title: "Onde o Polen Conduz?"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4704D36E4C0F762E"]
+			description: ["Localiza a arena viva da Void Blossom. As Bramble Walls fecham o espaco, por isso entra com cura, leite, boa armadura e blocos de apoio."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:void_blossom_block"
+			id: "3B229922BC2FA1C0"
+			rewards: [
+				{
+					count: 4
+					id: "225FF68966677348"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "15DD34F543D63CEF"
+					item: "minecraft:milk_bucket"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "56180C4E2AE0D9DF"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3F0DC75F1C6F8E6D"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "7C3232B7071AF2EA"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+			]
+			subtitle: "A arena subterranea."
+			tasks: [{
+				id: "5823F63CEDC2AE9B"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bosses_of_mass_destruction:void_blossom_block"
+				type: "observation"
+			}]
+			title: "O Jardim de Espinhos"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B229922BC2FA1C0"]
+			description: ["Spore e Petal Blade fazem parte da luta da Void Blossom. O objetivo e aprender a prioridade: curar veneno, fugir dos espinhos e destruir petalas de cura."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:void_thorn"
+			id: "2F6FAA6877BB7DB2"
+			rewards: [
+				{
+					count: 2
+					id: "0C12FA570373B64C"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "41C93E7E4D3003CA"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7964C6C7A2157686"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "05BD12F3E9E0C18F"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+			shape: "circle"
+			subtitle: "Spore e Petal Blade sao ataques da flor."
+			tasks: [
+				{
+					count: 2L
+					id: "53C9C984D0A7EA10"
+					item: { Count: 2, id: "minecraft:milk_bucket" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0875E68F7156A1E5"
+					item: { Count: 8, id: "minecraft:honey_bottle" }
+					type: "item"
+				}
+			]
+			title: "A Flor Aprende a Morder"
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2F6FAA6877BB7DB2"]
+			description: ["Derrota a Void Blossom. Quando ela tentar curar com petalas protegidas, muda o foco imediatamente ou a luta volta para tras."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:crystal_fruit"
+			id: "080341C0B3EC162B"
+			rewards: [
+				{
+					count: 2
+					id: "617FA5F7658EFF09"
+					item: "bosses_of_mass_destruction:void_thorn"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2531B0EEAB495ED0"
+					item: "bosses_of_mass_destruction:crystal_fruit"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "5C66A4C19404FE71"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "76B3495E5DCE7FE8"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4F5F06EDD1729C35"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "42A21D21BEE0F38D"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+			]
+			shape: "diamond"
+			subtitle: "Boss 2/4: Void Blossom."
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
+				criterion: ""
+				id: "632329F4C724CDC0"
+				type: "advancement"
+			}]
+			title: "A Flor do Vazio"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["080341C0B3EC162B"]
+			description: ["Com Void Thorns, fabrica mobilidade de verdade. A Earthdive Spear atravessa blocos solidos e a Charged Ender Pearl e uma perola reutilizavel."]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "bosses_of_mass_destruction:earthdive_spear"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1D90DC327EB89649"
+			rewards: [
+				{
+					id: "67F425D9BDF3E750"
+					item: {
+						Count: 1
+						id: "bosses_of_mass_destruction:earthdive_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4A91CFF9F8A6E436"
+					item: "bosses_of_mass_destruction:charged_ender_pearl"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "15A07503D0D507DB"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5229207EA4AA52E8"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					id: "58616D3736484BCA"
+					type: "xp_levels"
+					xp_levels: 9
+				}
+			]
+			shape: "square"
+			subtitle: "As recompensas tambem te dao reservas."
+			tasks: [
+				{
+					id: "7AB0283F32705B1A"
+					item: {
+						Count: 1
+						id: "bosses_of_mass_destruction:earthdive_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19A10736F8B27A98"
+					item: "bosses_of_mass_destruction:charged_ender_pearl"
+					type: "item"
+				}
+			]
+			title: "Reliquias de Espinhos"
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1D90DC327EB89649"]
+			description: ["O proximo chefe vive no Nether. Entra preparado para lava, explosoes e knockback violento."]
+			hide_until_deps_visible: true
+			icon: "minecraft:netherrack"
+			id: "6A83BECD1EEC5576"
+			rewards: [
+				{
+					id: "34F7A41CFA47236C"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "42C8D1F8E4F944B0"
+					item: "minecraft:basalt"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "371ECACDE80C4C45"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "61499F7EF925DFE6"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+			]
+			subtitle: "Atravessa o portal."
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "65218AD1B423FCDF"
+				type: "dimension"
+			}]
+			title: "Rumo ao Submundo"
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A83BECD1EEC5576"]
+			description: ["Procura uma estrutura enorme de pedra negra nos mares de lava. O exterior selado avisa que o monumento nao quer visitantes."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:sealed_blackstone"
+			id: "5E3A9580909CF09E"
+			rewards: [
+				{
+					count: 32
+					id: "4FC1F57EC7872273"
+					item: "minecraft:blackstone"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7CC42A447AB7A627"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4044FF3714EE1E71"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "36AC4DED17CE2B7B"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			subtitle: "Primeiro sinal da arena."
+			tasks: [{
+				id: "557B5A958286F1DE"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bosses_of_mass_destruction:sealed_blackstone"
+				type: "observation"
+			}]
+			title: "Pedra Negra Selada"
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E3A9580909CF09E"]
+			description: ["No centro do monumento, encontra o Ancient Carved Blackstone. Ao quebrar o bloco certo, a arena acorda."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:gauntlet_blackstone"
+			id: "205BAF1639688A65"
+			rewards: [
+				{
+					count: 2
+					id: "0687B030F3AB6373"
+					item: "bosses_of_mass_destruction:gauntlet_blackstone"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4C06A751688299BB"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "3C1865F83B7602C4"
+					item: {
+						Count: 1
+						id: "minecraft:anvil"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CDAC0DD83D90179"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E001463F33A45AF"
+					type: "xp_levels"
+					xp_levels: 9
+				}
+			]
+			subtitle: "O gatilho do Nether Gauntlet."
+			tasks: [{
+				id: "49E2412DC4BF37DC"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bosses_of_mass_destruction:gauntlet_blackstone"
+				type: "observation"
+			}]
+			title: "O Monumento de Lava"
+			x: 22.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["205BAF1639688A65"]
+			description: ["O Nether Gauntlet so recebe dano de verdade no olho. Mantem-te em movimento, respeita o laser e nao deixes que um soco te atire para a lava."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:blazing_eye"
+			id: "5B5B15C2A2C8093D"
+			shape: "diamond"
+			subtitle: "Boss 3/4: Nether Gauntlet."
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
+				criterion: ""
+				id: "2A39EA3FEBA0B2AD"
+				type: "advancement"
+			}]
+			title: "O Punho de Netherite"
+			x: 24.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5B5B15C2A2C8093D"]
+			description: ["Com o Nether dominado, o ultimo caminho abre no End. Vais precisar de Elytra, foguetes e queda lenta para nao perder tudo no vazio."]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7C3B91804A0556C0"
+			rewards: [
+				{
+					count: 48
+					id: "44197FC963177661"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6EFD241F209BCC02"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1B0892F7BDB346BC"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "079B6BBAA235452C"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:slow_falling"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A94AD66891D38E5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			subtitle: "A proxima arena flutua."
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "0AAF8AFFD63441CB"
+				type: "dimension"
+			}]
+			title: "Rumo ao Vazio"
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7C3B91804A0556C0"]
+			description: ["Nas ilhas distantes, encontra a arena do Obsidilith. O Obsidian Altar e o ponto do ritual: prepara Eyes of Ender antes de mexer nele."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:obsidilith_end_frame"
+			id: "4A02787CB6FA4320"
+			rewards: [
+				{
+					id: "0A800F6437FCED60"
+					item: "bosses_of_mass_destruction:obsidilith_end_frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "73F4B3D853060387"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1216295D7A599AB2"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "53C5BD53799E7DB6"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "399682DDAE0D8BF6"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+			]
+			subtitle: "Chegaste ao altar final."
+			tasks: [{
+				id: "244CB8DA5D57F6F0"
+				observe_type: 0
+				timer: 0L
+				to_observe: "bosses_of_mass_destruction:obsidilith_end_frame"
+				type: "observation"
+			}]
+			title: "O Altar de Obsidiana"
+			x: 26.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4A02787CB6FA4320"]
+			description: ["O Obsidilith usa runas para se proteger e ataques que te lancam para o ar. Leva uma picareta rapida, queda lenta e foguetes na barra."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:obsidilith_rune"
+			id: "3C72E85BBB6031CB"
+			rewards: [
+				{
+					id: "6CDA64C52D8BA0AF"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AC3F16231D11E6E"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "47CA2997CBF30D21"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "4E99C219F29985DC"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "1432A08CD62FAFC8"
+					type: "xp_levels"
+					xp_levels: 14
+				}
+			]
+			subtitle: "Runas primeiro, boss depois."
+			tasks: [
+				{
+					id: "41CFBA8B97BBE008"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B26DF49B74C5D76"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:slow_falling"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Quebrar as Runas"
+			x: 28.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3C72E85BBB6031CB"]
+			description: ["Derrota o Obsidilith. Ele teleporta, cria ondas de energia e castiga qualquer jogador que ignore as runas ou lute perto demais do vazio."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:obsidian_heart"
+			id: "03F681A4C1F8E7FB"
+			rewards: [
+				{
+					count: 2
+					id: "310A240677EF3EBF"
+					item: "bosses_of_mass_destruction:obsidian_heart"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4499F3EC7E6BBE14"
+					item: "bosses_of_mass_destruction:obsidilith_rune"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "51604B842F86758F"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5BC668BF33461D9B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "6B8443C80733F2D2"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "6654F396A31C2058"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "52846B0DAA6A014E"
+					type: "xp_levels"
+					xp_levels: 22
+				}
+			]
+			shape: "diamond"
+			subtitle: "Boss 4/4: Obsidilith."
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
+				criterion: ""
+				id: "2E7FEAC6C3D01142"
+				type: "advancement"
+			}]
+			title: "O Colosso de Obsidiana"
+			x: 30.0d
+			y: 6.0d
+		}
+		{
+			description: ["Agora que todos os bosses cairam, transforma os drops em utilidade permanente: uma base protegida, explosoes ampliadas e voo localizado."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:mob_ward"
+			id: "07D43ACEA97B9E5A"
+			rewards: [
+				{
+					id: "00A9A8C16A7DFE2E"
+					item: "bosses_of_mass_destruction:mob_ward"
+					type: "item"
+				}
+				{
+					id: "20AA4F732248CB96"
+					item: "bosses_of_mass_destruction:monolith_block"
+					type: "item"
+				}
+				{
+					id: "1C37845EE12A3145"
+					item: "bosses_of_mass_destruction:levitation_block"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "34F00E2F3B3918B4"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "20B28F189615BE52"
+					type: "xp_levels"
+					xp_levels: 24
+				}
+			]
+			shape: "square"
+			subtitle: "A tecnologia dos bosses vira defesa."
+			tasks: [{
+				id: "4B68E204BC5F3FF5"
+				item: "bosses_of_mass_destruction:mob_ward"
+				type: "item"
+			}]
+			title: "Staff of Suppression"
+			x: 30.0d
+			y: 8.0d
+		}
+		{
+			description: ["O Blast Amplifier aumenta o poder de explosoes proximas. E uma recompensa perigosa, perfeita para quem ja derrotou tudo que o mod tinha para oferecer."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:monolith_block"
+			id: "5D0F952FFE10606C"
+			rewards: [
+				{
+					id: "1711E001E1D558FC"
+					item: "bosses_of_mass_destruction:monolith_block"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2E009C34F38C8598"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "69CCBF4566AD0A0C"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0EDA07F37142AB2F"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "614C31688125B026"
+					type: "xp_levels"
+					xp_levels: 24
+				}
+			]
+			shape: "square"
+			subtitle: "Poder bruto, agora controlado."
+			tasks: [{
+				id: "153186831DA84C1E"
+				item: "bosses_of_mass_destruction:monolith_block"
+				type: "item"
+			}]
+			title: "Blast Amplifier"
+			x: 32.0d
+			y: 8.0d
+		}
+		{
+			description: ["A Table of Elevation concede voo criativo numa coluna pequena. E o simbolo perfeito de que venceste o vazio sem cair nele."]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:levitation_block"
+			id: "0913180B983A6564"
+			rewards: [
+				{
+					id: "42DF6406101EAC9A"
+					item: "bosses_of_mass_destruction:levitation_block"
+					type: "item"
+				}
+				{
+					id: "2BFFFF997A86F56A"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "32C2057A9957DA30"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
+				{
+					id: "683ED7ED813B456A"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66A104C2D88AC92F"
+					type: "xp_levels"
+					xp_levels: 26
+				}
+			]
+			shape: "square"
+			subtitle: "Voo conquistado, nao oferecido."
+			tasks: [{
+				id: "388DFC4877781C9C"
+				item: "bosses_of_mass_destruction:levitation_block"
+				type: "item"
+			}]
+			title: "Table of Elevation"
+			x: 34.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"03F681A4C1F8E7FB"
+				"0913180B983A6564"
+				"07D43ACEA97B9E5A"
+				"5D0F952FFE10606C"
+			]
+			description: ["Night Lich, Void Blossom, Nether Gauntlet e Obsidilith cairam. As estrelas, esporos, cometas e runas agora sao so memorias do caminho."]
+			hide_until_deps_visible: true
+			icon: "minecraft:nether_star"
+			id: "51353471B4D3CD8A"
+			rewards: [
+				{
+					count: 4
+					id: "597EB5FE2B0E4CED"
+					item: "bosses_of_mass_destruction:ancient_anima"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "16528F32D2DB1A19"
+					item: "bosses_of_mass_destruction:void_thorn"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75A109BF94DEC016"
+					item: "bosses_of_mass_destruction:blazing_eye"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18D0C178A3BF5A25"
+					item: "bosses_of_mass_destruction:obsidian_heart"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "551926392B1305FF"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "1CA834DF6FABEACD"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "7590CFC415B44FD0"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C83A2D629362A51"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+			]
+			shape: "dragon"
+			size: 2.0d
+			subtitle: "Conclusao mestre do BOMD."
+			tasks: [
+				{
+					id: "6DA2E53FAF8F65F6"
+					item: "bosses_of_mass_destruction:ancient_anima"
+					type: "item"
+				}
+				{
+					id: "46166DE05269C37A"
+					item: "bosses_of_mass_destruction:void_thorn"
+					type: "item"
+				}
+				{
+					id: "7AD4CC46FE2C10E4"
+					item: "bosses_of_mass_destruction:blazing_eye"
+					type: "item"
+				}
+				{
+					id: "7ABE317899010216"
+					item: "bosses_of_mass_destruction:obsidian_heart"
+					type: "item"
+				}
+			]
+			title: "&6Bosses of Mass Destruction"
+			x: 32.0d
+			y: 6.0d
+		}
+	]
+	title: " &eBosses of Mass Destruction"
+	
+	// =================================================================
+	// 🏆 UNIVERSAL FTB QUESTS PACK
+	// 👤 Criado por: EuSerSantos
+	// 🔗 Repositório Oficial: https://github.com/EuSerSantos/Universal-Quests_FTB-Quests
+	// 📄 Licença: MIT (Livre para uso em modpacks, mantenha os créditos)
+	// =================================================================
+	
+}
