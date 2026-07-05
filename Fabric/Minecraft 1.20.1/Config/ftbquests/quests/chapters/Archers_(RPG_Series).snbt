@@ -1,0 +1,883 @@
+{
+
+	// =================================================================
+	// 📦 MOD: Archers (RPG Series)
+	// 📌 QUESTPACK VERSION: v1.0.0 (Minecraft 1.20.1)
+	// 👤 Created by: EuSerSantos
+	// 🔗 Repository: https://github.com/EuSerSantos/Universal-Quests_FTB-Quests
+	// =================================================================
+
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "archers"
+	group: "2BACEE37E5D53DF5"
+	icon: "archers:archer_spell_book"
+	id: "5ED4A4484D875C2B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Bem-vindo à senda do Atirador. O &lArchery Manual&r é o teu guia espiritual para desbloquear feitiços de arco como o &oPower Shot&r ou &oBarrage&r. Como o conhecimento é livre, clica na seta verde para aceitares o teu destino!"]
+			icon: "archers:archer_spell_book"
+			id: "086499BACB76DAFE"
+			rewards: [
+				{
+					count: 64
+					id: "4407CB3390A33084"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "7A957E2E311A87B5"
+					item: "minecraft:target"
+					type: "item"
+				}
+				{
+					id: "1F2C3D4E5F6A7B8C"
+					item: {
+						Count: 1
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2A3B4C5D6E7F8A9B"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "3A1F2C3D4E5F6A7B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			subtitle: "Archers • FTB Quests - By Santos"
+			tasks: [{
+				id: "46C41D650CF47C00"
+				title: "(Archers) O Manual de Arquearia"
+				type: "checkmark"
+			}]
+			title: "&eArchers"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["086499BACB76DAFE"]
+			description: ["Para fabricares o armamento avançado deste mod, vais precisar da &lArchery Artisan Table&r. Podes fabricá-la ou tentar encontrar um aldeão com a profissão de &oArchery Artisan&r nas vilas!"]
+			icon: "archers:archers_workbench"
+			id: "4B99AFA3747FF405"
+			progression_mode: "flexible"
+			rewards: [
+				{
+					count: 32
+					id: "43E71AC94F3973D3"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "1B2C3D4E5F6A7B8C"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5D6E7F8A9B0C1D2E"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6E7F8A9B0C1D2E3F"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "7F8A9B0C1D2E3F4A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			tasks: [{
+				id: "4144F47CB4D1741D"
+				item: "archers:archers_workbench"
+				type: "item"
+			}]
+			title: "Artesão das Linhas"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B99AFA3747FF405"]
+			description: ["Veste o conjunto de &lArcher&r. Cada peça desta armadura de tecido leve aumenta o teu bónus de dano à distância e velocidade de puxada do arco."]
+			icon: {
+				Count: 1
+				id: "archers:archer_armor_head"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7F3D586BE4D33626"
+			rewards: [
+				{
+					id: "39662CA9C4E82704"
+					item: "minecraft:bundle"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "2C3D4E5F6A7B8C9D"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0F1A2B3C4D5E6F7A"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "1A2B3C4D5E6F7A8B"
+					item: {
+						Count: 1
+						id: "archers:archer_armor_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E6F7A8B9C0D1E2F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					id: "18073F84CE6E034C"
+					item: {
+						Count: 1
+						id: "archers:archer_armor_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59E17A1F652D204D"
+					item: {
+						Count: 1
+						id: "archers:archer_armor_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3233BE96E2706B79"
+					item: {
+						Count: 1
+						id: "archers:archer_armor_legs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43839C2856541C37"
+					item: {
+						Count: 1
+						id: "archers:archer_armor_feet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Recruta da Aljava"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F3D586BE4D33626"]
+			description: ["Nem todos os arqueiros combatem da mesma forma. Escolhe e fabrica a tua especialização ideal entre a cadência do &lMechanical Shortbow&r, o equilíbrio do &lComposite Longbow&r, o requinte do &lRoyal Longbow&r, as rajadas da &lRapid Crossbow&r ou o impacto bruto da &lHeavy Crossbow&r!"]
+			icon: {
+				Count: 1
+				id: "archers:composite_longbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "56CE37B9A0223AB8"
+			rewards: [
+				{
+					count: 48
+					id: "5F2C8470981BAB96"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "6A7B8C9D0E1F2A3B"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "4D5E6F7A8B9C0D1E"
+					item: "minecraft:fletching_table"
+					type: "item"
+				}
+				{
+					id: "5E6F7A8B9C0D1E2A"
+					item: {
+						Count: 1
+						id: "archers:composite_longbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B8C9D0E1F2A3B4C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					id: "1C838DA839B4A9F7"
+					item: {
+						Count: 1
+						id: "archers:composite_longbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B993893486EC4EF"
+					item: {
+						Count: 1
+						id: "archers:mechanic_shortbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30A9AB54F625D5FF"
+					item: {
+						Count: 1
+						id: "archers:heavy_crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B5C6D7E8F90A1B2"
+					item: {
+						Count: 1
+						id: "archers:royal_longbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C6D7E8F90A1B2C3"
+					item: {
+						Count: 1
+						id: "archers:rapid_crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Escolhe o teu Estilo"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56CE37B9A0223AB8"]
+			description: ["O &lAuto-Fire Hook&r é um modificador brutal. Leva-o a uma Bigorna juntamente com o teu arco ou besta. Ele fará com que a arma dispare automaticamente assim que mantiveres o gatilho pressionado!"]
+			icon: "archers:auto_fire_hook"
+			id: "1AD1BADF1AF2167E"
+			rewards: [
+				{
+					id: "3022EBACFD690B35"
+					item: "minecraft:anvil"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3C98868BDBA27EDC"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6F7A8B9C0D1E2F3A"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7A8B9C0D1E2F3A4B"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "21D9DF8777ED530E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "282D3DBC0B220654"
+				item: "archers:auto_fire_hook"
+				type: "item"
+			}]
+			title: "Gatilho Automático"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1AD1BADF1AF2167E"]
+			description: ["Evolução! O set de &lRanger&r oferece muito mais proteção e buffs mágicos de precisão do que o set inicial. Essencial para sobreviveres em explorações perigosas."]
+			icon: {
+				Count: 1
+				id: "archers:ranger_armor_chest"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0011FD23460BF025"
+			rewards: [
+				{
+					count: 8
+					id: "221EE61EAC9045F2"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "23EB3678559617DE"
+					item: {
+						Count: 1
+						id: "archers:ranger_armor_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "745966124103A7D0"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "432E3AAF2CB767C8"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			tasks: [
+				{
+					id: "772226B794952552"
+					item: {
+						Count: 1
+						id: "archers:ranger_armor_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58318FF2CBAB61A8"
+					item: {
+						Count: 1
+						id: "archers:ranger_armor_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F89E66C2426D01B"
+					item: {
+						Count: 1
+						id: "archers:ranger_armor_legs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F546BD51E0FC227"
+					item: {
+						Count: 1
+						id: "archers:ranger_armor_feet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Guardião da Floresta"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0011FD23460BF025"]
+			description: ["Alcançaste a perfeição suprema. Ao revestires a tua armadura e armas com a liga mais resistente do Nether, forjas o letal conjunto e armamento de &lNetherite Ranger&r."]
+			icon: {
+				Count: 1
+				id: "archers:netherite_ranger_armor_chest"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "37945B06B0D07B2C"
+			rewards: [
+				{
+					count: 4
+					id: "5A3F57C9975DF368"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00DEE4D86EF4671E"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "176C2B26F05BB6A8"
+					item: "minecraft:netherite_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "6C394DB8A2AB2013"
+					item: {
+						Count: 1
+						id: "archers:netherite_longbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D8354980FC64162"
+					item: {
+						Count: 1
+						id: "archers:netherite_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "31BBE6C2812AB15F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "60E76B2C9F4CA250"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "0E1F2A3B4C5D6E7F"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+			shape: "dragon"
+			tasks: [
+				{
+					id: "4AF9841D2B6CA8CD"
+					item: {
+						Count: 1
+						id: "archers:netherite_ranger_armor_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00E0BE19D71077D9"
+					item: {
+						Count: 1
+						id: "archers:netherite_ranger_armor_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CE5737F79F2A6AA"
+					item: {
+						Count: 1
+						id: "archers:netherite_ranger_armor_legs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "253475C20272805D"
+					item: {
+						Count: 1
+						id: "archers:netherite_ranger_armor_feet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "081DC2AE7FB7A50D"
+					item: {
+						Count: 1
+						id: "archers:netherite_longbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D7E8F90A1B2C3D4"
+					item: {
+						Count: 1
+						id: "archers:netherite_shortbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E8F90A1B2C3D4E5"
+					item: {
+						Count: 1
+						id: "archers:netherite_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "O Atirador Fantasma"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B99AFA3747FF405"]
+			description: ["Se os teus inimigos quebrarem a linha de distância, os Arqueiros sabem como se defender! Fabrica uma lança de combate para manter o espaçamento ideal em combates corpo a corpo rígidos."]
+			icon: {
+				Count: 1
+				id: "archers:iron_spear"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45D67E89F01A2B34"
+			rewards: [
+				{
+					count: 8
+					id: "1F2A3B4C5D6E7F8A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "2F3A4B5C6D7E8F90"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "33C3BFB22DBEFE91"
+					item: {
+						Count: 1
+						id: "archers:diamond_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "044473140055B052"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "3F4A5B6C7D8E9F0A"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "35ABAFE507D07634"
+					item: {
+						Count: 1
+						id: "archers:flint_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C4B258A718DDA94"
+					item: {
+						Count: 1
+						id: "archers:iron_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00E1F2A3B4C5D6E7"
+					item: {
+						Count: 1
+						id: "archers:golden_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11F2A3B4C5D6E7F8"
+					item: {
+						Count: 1
+						id: "archers:diamond_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Lanças de Combate"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37945B06B0D07B2C"]
+			description: ["Demonstra a tua mestria total colecionando as quatro armas mais valiosas e raras do arsenal. Apenas um verdadeiro mestre atirador consegue reunir estas relíquias de combate!"]
+			icon: {
+				Count: 1
+				id: "archers:netherite_longbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A2B8C4D2E1F43A5"
+			rewards: [
+				{
+					count: 12
+					id: "1DF47C6610BC032D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "467BE35D0FE42786"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "0F7A16CBD1A04C81"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "5F1A5BB1C4FFADEF"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			tasks: [
+				{
+					id: "7B3C9D5E3F2A54B6"
+					item: {
+						Count: 1
+						id: "archers:diamond_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CD306D6ACF63ADE"
+					item: {
+						Count: 1
+						id: "archers:netherite_shortbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75835ECA9FC09991"
+					item: {
+						Count: 1
+						id: "archers:netherite_longbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1986D3BF3EACEFD2"
+					item: {
+						Count: 1
+						id: "archers:netherite_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal Precioso"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["086499BACB76DAFE"]
+			description: ["Para libertares o verdadeiro poder contido no teu manual, deves primeiro possuir o grimório físico da classe. Garante o teu livro para iniciar os estudos das artes balísticas espirituais."]
+			icon: "archers:archer_spell_book"
+			id: "12A34B56C78D9E01"
+			rewards: [
+				{
+					count: 6
+					id: "657158321E997A87"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "4CC0F6E04439D42E"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D2307C806707101"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					id: "6B0BC119D6C271D4"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+			tasks: [{
+				id: "22C34D5E6F7A8B9C"
+				item: "archers:archer_spell_book"
+				type: "item"
+			}]
+			title: "Equipar Grimório de Feitiços"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12A34B56C78D9E01"]
+			description: ["Leva o teu grimório até uma mesa de feitiços (Spell Binding Table) rodeada de estantes para canalizares habilidades como &ePower Shot&r, &eBarrage&r ou &eMagic Arrow&r! Confirma o teu domínio na alquimia balística."]
+			icon: "spell_engine:spell_binding"
+			id: "23B45C67D89E0F12"
+			rewards: [
+				{
+					count: 48
+					id: "0A1B2C3D4E5F6A7B"
+					item: "minecraft:spectral_arrow"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "18206CA366447701"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "47364FF6094E6CE5"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "55267D7AB35ADF65"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "44E56F7A8B9C0D1E"
+					title: "Domina as Habilidades Mágicas do Atirador"
+					type: "checkmark"
+				}
+				{
+					id: "356B21686A40D8DA"
+					item: "spell_engine:spell_binding"
+					type: "item"
+				}
+			]
+			title: "Mestria Mágica"
+			x: -0.5d
+			y: 1.5d
+		}
+	]
+	title: " &eArchers"
+	
+	// =================================================================
+	// 🏆 UNIVERSAL FTB QUESTS PACK
+	// 👤 Created by: EuSerSantos
+	// 🔗 Official Repository: https://github.com/EuSerSantos/Universal-Quests_FTB-Quests
+	// 📄 License: MIT (Free to use in modpacks, please keep credits)
+	// =================================================================
+	
+}
